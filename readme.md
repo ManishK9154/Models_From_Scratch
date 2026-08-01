@@ -43,15 +43,15 @@ Documenting these because finding and fixing them was most of the actual learnin
 ## Project structure
 
 ```
-regression/
-├── Regression.py                  # Core from-scratch implementations
+Models_From_Scratch/
+├── models/
+│   └── Regression.py     # Linear & Logistic Regression Core from-scratch implementations
 ├── requirements.txt
 ├── data/
 │   └── Telco_Customer_Churn.csv
 ├── notebooks/
 │   ├── linear_regression.ipynb    # California Housing — SimpleRegression
 │   └── logistic_regression.ipynb  # Telco Churn — LogisticRegression
-└── notes/                         # Theory notes
 ```
 
 ## Setup
@@ -66,15 +66,3 @@ import sys
 sys.path.append('..')
 from Regression import LogisticRegression, SimpleRegression, StandardScaler, TrainTestSplit
 ```
-
-## Roadmap
-
-This repo is part of a broader from-scratch → framework learning progression:
-- [x] Linear Regression
-- [x] Logistic Regression
-- [ ] K-Means Clustering
-- [ ] Autograd engine (scalar-valued, micrograd-style)
-- [ ] Neural network on the custom autograd engine
-- [ ] Vectorized Tensor class
-- [ ] scikit-learn fluency pass (Pipelines, GridSearchCV, SHAP)
-- [ ] PyTorch: MLP → CNN on MNIST
